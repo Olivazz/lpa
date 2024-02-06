@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-06 11:23:34 "/>
+        <attribute name="created" value="QWx1bm87TElNMDMtTjA5OzIwMjQtMDItMDY7IjEwOjM0OjE2ICI7MjI1MA=="/>
+        <attribute name="edited" value="QWx1bm87TElNMDMtTjA5OzIwMjQtMDItMDY7IjExOjIzOjM0ICI7MTsyMzU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="escolha" type="String" array="False" size=""/>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="soma" type="Integer" array="False" size=""/>
+            <declare name="subtracao" type="Integer" array="False" size=""/>
+            <declare name="divisao" type="Integer" array="False" size=""/>
+            <declare name="resultadoMulti" type="Real" array="False" size=""/>
+            <declare name="resultadoDiv" type="Real" array="False" size=""/>
+            <declare name="resultadoSoma" type="Real" array="False" size=""/>
+            <declare name="resultadoSub" type="Real" array="False" size=""/>
+            <output expression="&quot; Ol&#225;&quot;" newline="True"/>
+            <output expression="&quot; Qual o seu nome ?&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="nome &amp; &quot; voc&#234; pode me dizer dois numeros (separadamente) para algumas contas? &quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <output expression="&quot; Voc&#234; deseja uma soma, uma subtra&#231;&#227;o, uma divis&#227;o ou uma multiplicac&#227;o ?&quot;" newline="True"/>
+            <input variable="escolha"/>
+            <if expression="escolha == &quot;Multiplica&#231;&#227;o&quot;">
+                <then>
+                    <assign variable="resultadoMulti" expression="a*b"/>
+                    <output expression="&quot;O seu resultado &#233; de &quot; &amp; resultadoMulti" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="escolha == &quot;Divis&#227;o&quot;">
+                <then>
+                    <assign variable="resultadoDiv" expression="a/b"/>
+                    <output expression="&quot;O seu resultado &#233; de &quot; &amp; resultadoDiv" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="escolha == &quot;Soma&quot;">
+                <then>
+                    <assign variable="resultadoSoma" expression="a+b"/>
+                    <output expression="&quot;O seu resultado &#233; de &quot; &amp; resultadoSoma" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="escolha == &quot;Subtra&#231;&#227;o&quot;">
+                <then>
+                    <assign variable="resultadoSub" expression="a-b"/>
+                    <output expression="&quot;O seu resultado &#233; de &quot; &amp; resultadoSub" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="escolha == &quot;multiplica&#231;&#227;o&quot;">
+                <then>
+                    <assign variable="resultadoMulti" expression="a*b"/>
+                    <output expression="&quot;O seu resultado &#233; de &quot; &amp; resultadoMulti" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="escolha == &quot;subtra&#231;&#227;o&quot;">
+                <then>
+                    <assign variable="resultadoSub" expression="a-b"/>
+                    <output expression="&quot;O seu resultado &#233; de &quot; &amp; resultadoSub" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="escolha == &quot;soma&quot;">
+                <then>
+                    <assign variable="resultadoSoma" expression="a+b"/>
+                    <output expression="&quot;O seu resultado &#233; de &quot; &amp; resultadoSoma" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="escolha == &quot;divis&#227;o&quot;">
+                <then>
+                    <assign variable="resultadoDiv" expression="a/b"/>
+                    <output expression="&quot;O seu resultado &#233; de &quot; &amp; resultadoDiv" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

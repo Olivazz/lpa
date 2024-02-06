@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-06 10:33:42 "/>
+        <attribute name="created" value="QWx1bm87TElNMDMtTjA5OzIwMjQtMDItMDY7IjA5OjU5OjM5ICI7MjI3MA=="/>
+        <attribute name="edited" value="QWx1bm87TElNMDMtTjA5OzIwMjQtMDItMDY7IjEwOjMzOjQyICI7MTA7MjQwNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="resultado" type="Integer" array="False" size=""/>
+            <declare name="usuario" type="String" array="False" size=""/>
+            <declare name="numeroUm" type="Integer" array="False" size=""/>
+            <declare name="numeroDois" type="Integer" array="False" size=""/>
+            <declare name="numeroTres" type="Integer" array="False" size=""/>
+            <declare name="numeroQuatro" type="Integer" array="False" size=""/>
+            <output expression="&quot; Ol&#225;&quot;" newline="True"/>
+            <output expression="&quot; Qual o seu nome? &quot;" newline="True"/>
+            <input variable="usuario"/>
+            <output expression="&quot; Prazer em conhece-lo &quot;" newline="True"/>
+            <output expression="usuario &amp; &quot; voc&#234; pode me dizer quatro n&#250;meros para uma soma? separadamente&quot;" newline="True"/>
+            <input variable="numeroUm"/>
+            <input variable="numeroDois"/>
+            <input variable="numeroTres"/>
+            <input variable="numeroQuatro"/>
+            <output expression="&quot; Obrigado &quot;" newline="True"/>
+            <assign variable="resultado" expression="numeroUm+numeroDois+numeroTres+numeroQuatro"/>
+            <output expression="&quot; O resultado dessa soma &#233; &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
